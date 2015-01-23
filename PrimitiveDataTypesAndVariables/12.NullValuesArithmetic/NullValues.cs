@@ -1,0 +1,26 @@
+﻿/*Problem 12. Null Values Arithmetic
+
+    Create a program that assigns null values to an integer and to a double variable.
+    Try to print these variables at the console.
+    Try to add some number or the null literal to these variables and print the result.
+*/
+
+
+using System;
+
+    class NullValues
+    {
+        static void Main()
+        {
+            int? nullInt = null;
+            Console.WriteLine(nullInt);
+            double? nullDouble = null;
+            Console.WriteLine(nullDouble);
+            nullInt = 55;
+            Console.WriteLine(nullInt.GetValueOrDefault());
+            nullDouble = 500;
+            Console.WriteLine(nullDouble.GetValueOrDefault());
+            Console.Write("Press any key to continue");
+            Console.ReadKey();
+        }
+    }
